@@ -273,22 +273,6 @@ G2L["23"] = Instance.new("LocalScript", G2L["1"]);
 -- StarterGui.Loader.LocalScript
 local function C_23()
 local script = G2L["23"];
-	pcall(function()
-		local loader = game:GetService("CoreGui")
-		
-		if loader ~= script.Parent then
-			game:GetService("CoreGui").Loader:Destroy()
-		end
-	end)
-	
-	pcall(function()
-		local loader = game:GetService("Players").LocalPlayer.PlayerGui.Loader
-
-		if loader ~= script.Parent then
-			game:GetService("CoreGui").Loader:Destroy()
-		end
-	end)
-	
 	local marketplaceService = game:GetService("MarketplaceService")
 	local tweenService = game:GetService("TweenService")
 	local lighting = game:GetService("Lighting")

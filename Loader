@@ -1,0 +1,668 @@
+local G2L = {};
+
+-- StarterGui.Loader
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[Loader]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+-- StarterGui.Loader.Main
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(192, 128, 189);
+G2L["2"]["Size"] = UDim2.new(0, 635, 0, 360);
+G2L["2"]["ClipsDescendants"] = true;
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Position"] = UDim2.new(0.3552333414554596, 0, 0.3430531620979309, 0);
+G2L["2"]["Name"] = [[Main]];
+
+-- StarterGui.Loader.Main.Background
+G2L["3"] = Instance.new("Frame", G2L["2"]);
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(9, 8, 5);
+G2L["3"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["3"]["Size"] = UDim2.new(1, -2, 1, -2);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["3"]["Name"] = [[Background]];
+
+-- StarterGui.Loader.Main.Background.UIListLayout
+G2L["7"] = Instance.new("UIListLayout", G2L["3"]);
+G2L["7"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["7"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- StarterGui.Loader.Main.Background.Title
+G2L["4"] = Instance.new("TextLabel", G2L["3"]);
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["RichText"] = true;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["4"]["TextSize"] = 16;
+G2L["4"]["TextColor3"] = Color3.fromRGB(166, 166, 166);
+G2L["4"]["Size"] = UDim2.new(1, 0, 0, 26);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Text"] = [[blaze<font color="rgb(191,127,188)">.wth</font>]];
+G2L["4"]["Name"] = [[Title]];
+G2L["4"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.Loader.Main.Background.Title.UIPadding
+G2L["5"] = Instance.new("UIPadding", G2L["4"]);
+G2L["5"]["PaddingLeft"] = UDim.new(0, 8);
+
+-- StarterGui.Loader.Main.Background.Slicer1
+G2L["6"] = Instance.new("Frame", G2L["3"]);
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(26, 25, 24);
+G2L["6"]["Size"] = UDim2.new(1, 0, 0, 1);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Name"] = [[Slicer1]];
+
+-- StarterGui.Loader.Main.Background.Games
+G2L["8"] = Instance.new("Frame", G2L["3"]);
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["BackgroundTransparency"] = 1;
+G2L["8"]["Size"] = UDim2.new(1, 0, 0, 174);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Name"] = [[Games]];
+
+-- StarterGui.Loader.Main.Background.Games.UIListLayout
+G2L["9"] = Instance.new("UIListLayout", G2L["8"]);
+G2L["9"]["Padding"] = UDim.new(0, 4);
+G2L["9"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- StarterGui.Loader.Main.Background.Slicer2
+G2L["a"] = Instance.new("Frame", G2L["3"]);
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(26, 25, 24);
+G2L["a"]["Size"] = UDim2.new(1, 0, 0, 1);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["Name"] = [[Slicer2]];
+
+-- StarterGui.Loader.Main.Background.Text1
+G2L["b"] = Instance.new("TextLabel", G2L["3"]);
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["RichText"] = true;
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["b"]["TextSize"] = 16;
+G2L["b"]["TextColor3"] = Color3.fromRGB(166, 166, 166);
+G2L["b"]["Size"] = UDim2.new(1, 0, 0, 26);
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Text"] = [[selection <font color="rgb(191,127,188)">information</font>]];
+G2L["b"]["Name"] = [[Text1]];
+G2L["b"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.Loader.Main.Background.Text1.UIPadding
+G2L["c"] = Instance.new("UIPadding", G2L["b"]);
+G2L["c"]["PaddingLeft"] = UDim.new(0, 8);
+
+-- StarterGui.Loader.Main.Background.Slicer3
+G2L["d"] = Instance.new("Frame", G2L["3"]);
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(26, 25, 24);
+G2L["d"]["Size"] = UDim2.new(1, 0, 0, 1);
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Name"] = [[Slicer3]];
+
+-- StarterGui.Loader.Main.Background.Information
+G2L["e"] = Instance.new("Frame", G2L["3"]);
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["BackgroundTransparency"] = 1;
+G2L["e"]["Size"] = UDim2.new(1, 0, 0, 100);
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Name"] = [[Information]];
+
+-- StarterGui.Loader.Main.Background.Information.Icon
+G2L["f"] = Instance.new("ImageLabel", G2L["e"]);
+G2L["f"]["BorderSizePixel"] = 0;
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["f"]["Image"] = [[rbxassetid://17495703026]];
+G2L["f"]["Size"] = UDim2.new(1, -10, 1, -10);
+G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["Name"] = [[Icon]];
+G2L["f"]["Position"] = UDim2.new(0, 0, 0.5, 0);
+
+-- StarterGui.Loader.Main.Background.Information.Icon.UIAspectRatioConstraint
+G2L["10"] = Instance.new("UIAspectRatioConstraint", G2L["f"]);
+
+
+-- StarterGui.Loader.Main.Background.Information.Icon.UICorner
+G2L["11"] = Instance.new("UICorner", G2L["f"]);
+G2L["11"]["CornerRadius"] = UDim.new(0, 4);
+
+-- StarterGui.Loader.Main.Background.Information.UIPadding
+G2L["12"] = Instance.new("UIPadding", G2L["e"]);
+G2L["12"]["PaddingTop"] = UDim.new(0, 4);
+G2L["12"]["PaddingLeft"] = UDim.new(0, 10);
+
+-- StarterGui.Loader.Main.Background.Information.name
+G2L["13"] = Instance.new("TextLabel", G2L["e"]);
+G2L["13"]["TextWrapped"] = true;
+G2L["13"]["BorderSizePixel"] = 0;
+G2L["13"]["RichText"] = true;
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["13"]["TextSize"] = 15;
+G2L["13"]["TextColor3"] = Color3.fromRGB(166, 166, 166);
+G2L["13"]["Size"] = UDim2.new(1, -100, 0, 18);
+G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["Text"] = [[Da Hood]];
+G2L["13"]["Name"] = [[name]];
+G2L["13"]["BackgroundTransparency"] = 1;
+G2L["13"]["Position"] = UDim2.new(0, 86, 0, 6);
+
+-- StarterGui.Loader.Main.Background.Information.name.UIPadding
+G2L["14"] = Instance.new("UIPadding", G2L["13"]);
+G2L["14"]["PaddingLeft"] = UDim.new(0, 8);
+
+-- StarterGui.Loader.Main.Background.Information.LastUpdate
+G2L["15"] = Instance.new("TextLabel", G2L["e"]);
+G2L["15"]["TextWrapped"] = true;
+G2L["15"]["BorderSizePixel"] = 0;
+G2L["15"]["RichText"] = true;
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["15"]["TextSize"] = 15;
+G2L["15"]["TextColor3"] = Color3.fromRGB(166, 166, 166);
+G2L["15"]["Size"] = UDim2.new(1, -100, 0, 18);
+G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["Text"] = [[Last Update: <font color="rgb(191,127,188)">05.08.2024</font>]];
+G2L["15"]["Name"] = [[LastUpdate]];
+G2L["15"]["BackgroundTransparency"] = 1;
+G2L["15"]["Position"] = UDim2.new(0, 86, 0, 24);
+
+-- StarterGui.Loader.Main.Background.Information.LastUpdate.UIPadding
+G2L["16"] = Instance.new("UIPadding", G2L["15"]);
+G2L["16"]["PaddingLeft"] = UDim.new(0, 8);
+
+-- StarterGui.Loader.Main.Background.Information.PlayerCount
+G2L["17"] = Instance.new("TextLabel", G2L["e"]);
+G2L["17"]["TextWrapped"] = true;
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["RichText"] = true;
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["17"]["TextSize"] = 15;
+G2L["17"]["TextColor3"] = Color3.fromRGB(166, 166, 166);
+G2L["17"]["Size"] = UDim2.new(1, -100, 0, 18);
+G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["Text"] = [[Player Count: <font color="rgb(191,127,188)">23621</font>]];
+G2L["17"]["Name"] = [[PlayerCount]];
+G2L["17"]["BackgroundTransparency"] = 1;
+G2L["17"]["Position"] = UDim2.new(0, 86, 0, 42);
+
+-- StarterGui.Loader.Main.Background.Information.PlayerCount.UIPadding
+G2L["18"] = Instance.new("UIPadding", G2L["17"]);
+G2L["18"]["PaddingLeft"] = UDim.new(0, 8);
+
+-- StarterGui.Loader.Main.Background.Information.TextButton
+G2L["19"] = Instance.new("TextButton", G2L["e"]);
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(13, 13, 13);
+G2L["19"]["TextSize"] = 14;
+G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["19"]["TextColor3"] = Color3.fromRGB(192, 128, 189);
+G2L["19"]["Size"] = UDim2.new(0, 86, 0, 20);
+G2L["19"]["BorderColor3"] = Color3.fromRGB(192, 128, 189);
+G2L["19"]["Text"] = [[Load]];
+G2L["19"]["Position"] = UDim2.new(0, 94, 0, 70);
+
+-- StarterGui.Loader.Main.Background.Slicer4
+G2L["1a"] = Instance.new("Frame", G2L["3"]);
+G2L["1a"]["BorderSizePixel"] = 0;
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(26, 25, 24);
+G2L["1a"]["Size"] = UDim2.new(1, 0, 0, 1);
+G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["Name"] = [[Slicer4]];
+
+-- StarterGui.Loader.Main.Background.Title2
+G2L["1b"] = Instance.new("TextLabel", G2L["3"]);
+G2L["1b"]["BorderSizePixel"] = 0;
+G2L["1b"]["RichText"] = true;
+G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["1b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["1b"]["TextSize"] = 16;
+G2L["1b"]["TextColor3"] = Color3.fromRGB(166, 166, 166);
+G2L["1b"]["Size"] = UDim2.new(1, 0, 0, 26);
+G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b"]["Text"] = [[Build: <font color="rgb(191,127,188)">public-release</font>]];
+G2L["1b"]["Name"] = [[Title2]];
+G2L["1b"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.Loader.Main.Background.Title2.UIPadding
+G2L["1c"] = Instance.new("UIPadding", G2L["1b"]);
+G2L["1c"]["PaddingLeft"] = UDim.new(0, 8);
+
+-- StarterGui.Loader.Main.Background.Particles
+G2L["1d"] = Instance.new("Folder", G2L["3"]);
+G2L["1d"]["Name"] = [[Particles]];
+
+-- StarterGui.Loader.Colors
+G2L["1e"] = Instance.new("Folder", G2L["1"]);
+G2L["1e"]["Name"] = [[Colors]];
+
+-- StarterGui.Loader.Colors.Main
+G2L["1f"] = Instance.new("Color3Value", G2L["1e"]);
+G2L["1f"]["Value"] = Color3.fromRGB(9, 8, 5);
+G2L["1f"]["Name"] = [[Main]];
+
+-- StarterGui.Loader.Colors.Secondary
+G2L["20"] = Instance.new("Color3Value", G2L["1e"]);
+G2L["20"]["Value"] = Color3.fromRGB(192, 128, 189);
+G2L["20"]["Name"] = [[Secondary]];
+
+-- StarterGui.Loader.Lighting
+G2L["21"] = Instance.new("Folder", G2L["1"]);
+G2L["21"]["Name"] = [[Lighting]];
+
+-- StarterGui.Loader.Lighting.Blur
+G2L["22"] = Instance.new("BlurEffect", G2L["21"]);
+G2L["22"]["Enabled"] = false;
+G2L["22"]["Size"] = 18;
+
+-- StarterGui.Loader.LocalScript
+G2L["23"] = Instance.new("LocalScript", G2L["1"]);
+
+
+-- StarterGui.Loader.LocalScript
+local function C_23()
+local script = G2L["23"];
+	pcall(function()
+		local loader = game:GetService("CoreGui")
+		
+		if loader ~= script.Parent then
+			game:GetService("CoreGui").Loader:Destroy()
+		end
+	end)
+	
+	pcall(function()
+		local loader = game:GetService("Players").LocalPlayer.PlayerGui.Loader
+
+		if loader ~= script.Parent then
+			game:GetService("CoreGui").Loader:Destroy()
+		end
+	end)
+	
+	local marketplaceService = game:GetService("MarketplaceService")
+	local tweenService = game:GetService("TweenService")
+	local lighting = game:GetService("Lighting")
+	
+	local gui = script.Parent
+
+	local main = gui.Main.Background
+
+	local folders = {
+		Lightning = gui.Lighting,
+		Colors = gui.Colors
+	}
+
+	local vars = {}; do
+		vars.selected = nil
+		vars.selecting = false
+	
+		vars.tweens = {}
+		vars.games = {}
+	end
+	
+	local funcs = {}; do
+		function funcs.stopTweens()
+			for _, tween in pairs(vars.tweens) do
+				tween:Cancel()
+			end
+		end
+		
+		function funcs.getGameInformation(placeid)
+			local success, returned = pcall(function()
+				local http = game:GetService("HttpService")
+				local a = request({Url = "https://apis.roproxy.com/universes/v1/places/" .. placeid .. "/universe"})
+				local universeid = game:GetService("HttpService"):JSONDecode(a.Body).universeId
+				local data2 = request({Url = "https://games.roproxy.com/v1/games?universeIds=" .. universeid})
+				local decodeddata = game:GetService("HttpService"):JSONDecode(data2.Body)
+	
+				return decodeddata
+			end)
+			
+			if success then
+				return returned.data[1]
+			else
+				return {playing = 0, updated = "0-0-0T00:00:00.000Z"}
+			end
+		end
+		
+		function funcs.createParticle(x)
+			if not main:FindFirstChild("Particles") then
+				return
+			end
+			
+			local frame = Instance.new("Frame", main.Particles)
+			frame.Name = "Particle"
+			frame.Size = UDim2.new(0, 6, 0, 6)
+			frame.BackgroundColor3 = Color3.fromRGB(191, 127, 188)
+			frame.BackgroundTransparency = 0.4
+			frame.Position = UDim2.new(x, 0, 0, 0)
+			frame.ZIndex = 0
+			
+			local corner = Instance.new("UICorner", frame)
+			corner.CornerRadius = UDim.new(1, 0)
+			
+			task.spawn(function()
+				local tween = tweenService:Create(frame, TweenInfo.new(math.random(0.5, 1.5), Enum.EasingStyle.Sine), {Position = UDim2.new(x, 0, 1, 6)})
+				tween:Play()
+				tween.Completed:Wait()
+				frame:Destroy()
+			end)
+		end
+		
+		function funcs.formatDate(date)
+			local year, month, day = date:match("(%d+)-(%d+)-(%d+)T")
+			local formattedDateString = string.format("%02d.%02d.%d", tonumber(month), tonumber(day), tonumber(year))
+			return formattedDateString
+		end
+	
+		function funcs.select(name)
+			if vars.selecting then
+				return
+			end
+	
+			vars.selecting = true
+	
+			local frame = main.Games:FindFirstChild(name)
+			local preframe = vars.selected and main.Games:FindFirstChild(vars.selected.Name)
+	
+			if not frame then
+				warn("Failed to find game instance."); return
+			end
+	
+			local clonelabel = frame.name:Clone()
+			clonelabel.TextTransparency = 1
+			clonelabel.Text = "<font color=\"rgb(171,107,168)\" size=\"11\">●</font><font color=\"rgb(191,127,188)\" size=\"16\">  " .. name .. "</font>"
+			clonelabel.ZIndex = 0
+			clonelabel.Parent = frame
+			clonelabel.Name = "clone"
+	
+			local preclonelabel
+			
+			if preframe then
+				preclonelabel = preframe.name:Clone()
+				preclonelabel.TextTransparency = 1
+				preclonelabel.Text = "<font color=\"rgb(75,75,75)\" size=\"11\">●</font><font color=\"rgb(190,190,190)\" size=\"16\">  " .. vars.selected.Name .. "</font>"
+				preclonelabel.ZIndex = 0
+				preclonelabel.Parent = preframe
+				preclonelabel.Name = "clone"
+			end
+	
+			local t_time = 0.25
+	
+			local tween1 = tweenService:Create(frame.name, TweenInfo.new(t_time, Enum.EasingStyle.Quad), {TextTransparency = 1})
+			local tween2 = tweenService:Create(clonelabel, TweenInfo.new(t_time, Enum.EasingStyle.Quad), {TextTransparency = 0})
+			local tween3 = tweenService:Create(frame.name.UIPadding, TweenInfo.new(0.1, Enum.EasingStyle.Quad), {PaddingLeft = UDim.new(0, 10)})
+			local tween4 = tweenService:Create(clonelabel.UIPadding, TweenInfo.new(0.1, Enum.EasingStyle.Quad), {PaddingLeft = UDim.new(0, 10)})
+	
+			local pretween1 = preframe and tweenService:Create(preframe.name, TweenInfo.new(t_time, Enum.EasingStyle.Quad), {TextTransparency = 1})
+			local pretween2 = preframe and tweenService:Create(preclonelabel, TweenInfo.new(t_time, Enum.EasingStyle.Quad), {TextTransparency = 0})
+			local pretween3 = preframe and tweenService:Create(preframe.name.UIPadding, TweenInfo.new(0.1, Enum.EasingStyle.Quad), {PaddingLeft = UDim.new(0, 10)})
+			local pretween4 = preframe and tweenService:Create(preclonelabel.UIPadding, TweenInfo.new(0.1, Enum.EasingStyle.Quad), {PaddingLeft = UDim.new(0, 10)})
+	
+			table.insert(vars.tweens, tween1)
+			table.insert(vars.tweens, tween2)
+			table.insert(vars.tweens, tween3)
+			table.insert(vars.tweens, tween4)
+	
+			if preframe then
+				table.insert(vars.tweens, pretween1)
+				table.insert(vars.tweens, pretween2)
+				table.insert(vars.tweens, pretween3)
+				table.insert(vars.tweens, pretween4)
+			end
+	
+			tween1:Play()
+			tween2:Play()
+			tween3:Play()
+			tween4:Play()
+	
+			if preframe then
+				pretween1:Play()
+				pretween2:Play()
+				pretween3:Play()
+				pretween4:Play()
+			end
+	
+			vars.selected = vars.games[name]
+	
+			if vars.selected.Id then
+				task.spawn(function()
+					main.Information.Icon.Image = vars.selected.gameIcon
+				end)
+				
+				main.Information.name.Text = vars.selected.Name
+				main.Information.PlayerCount.Text = 'Player Count: <font color="rgb(191,127,188)">' .. vars.selected.playerCount .. '</font>'
+				main.Information.LastUpdate.Text = 'Last Update: <font color="rgb(191,127,188)"> ' .. funcs.formatDate(vars.selected.lastUpdated) .. '</font>'
+			end
+	
+			wait(t_time)
+			
+			wait(0.1)
+	
+			frame.name.Text = clonelabel.Text
+			
+			if preframe then
+				preframe.name.Text = preclonelabel.Text
+			end
+	
+			frame.name.TextTransparency = 0
+			
+			if preframe then
+				preframe.name.TextTransparency = 0
+			end
+	
+			clonelabel:Destroy()
+			
+			if preframe then
+				preclonelabel:Destroy()
+			end
+	
+			wait(0.1)
+	
+			vars.selecting = false
+		end
+	
+		function funcs.add(info)
+			local gameFrame = Instance.new("Frame", main.Games)
+			gameFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			gameFrame.BackgroundTransparency = 1
+			gameFrame.Size = UDim2.new(1, 0, 0, 24)
+			gameFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+			gameFrame.Name = info.Name
+	
+			local nameLabel = Instance.new("TextLabel", gameFrame)
+			nameLabel.BorderSizePixel = 0
+			nameLabel.RichText = true
+			nameLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			nameLabel.TextXAlignment = Enum.TextXAlignment.Left
+			nameLabel.TextSize = 16
+			nameLabel.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
+			nameLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+			nameLabel.Size = UDim2.new(0.5, 0, 0, 24)
+			nameLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+			nameLabel.Name = "name"
+			nameLabel.BackgroundTransparency = 1
+			nameLabel.Text = "<font color=\"rgb(75,75,75)\" size=\"11\">●</font><font color=\"rgb(190,190,190)\" size=\"16\">  " .. info.Name .. "</font>"
+	
+			local nameLabelPadding = Instance.new("UIPadding", nameLabel)
+			nameLabelPadding.PaddingLeft = UDim.new(0, 10)
+	
+			local gameFramePadding = Instance.new("UIPadding", gameFrame)
+			gameFramePadding.PaddingTop = UDim.new(0, 5)
+			gameFramePadding.PaddingLeft = UDim.new(0, 6)
+	
+			local statusLabel = Instance.new("TextLabel", gameFrame)
+			statusLabel.BorderSizePixel = 0
+			statusLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			statusLabel.TextXAlignment = Enum.TextXAlignment.Right
+			statusLabel.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+			statusLabel.TextSize = 16
+			statusLabel.TextColor3 = Color3.fromRGB(145, 145, 145)
+			statusLabel.AnchorPoint = Vector2.new(1, 0)
+			statusLabel.Size = UDim2.new(0.5, 0, 0, 24)
+			statusLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+			statusLabel.Text = info.Status
+			statusLabel.Name = "status"
+			statusLabel.BackgroundTransparency = 1
+			statusLabel.Position = UDim2.new(1, 0, 0, 0)
+	
+			local statusLabelPadding = Instance.new("UIPadding", statusLabel)
+			statusLabelPadding.PaddingRight = UDim.new(0, 14)
+	
+			local button = Instance.new("TextButton", gameFrame)
+			button.Size = nameLabel.Size
+			button.Position = nameLabel.Position
+			button.Text = ""
+			button.BackgroundTransparency = 1
+	
+			local hovering = false
+	
+			button.MouseButton1Click:Connect(function()
+				if vars.selected.Name ~= info.Name then
+					funcs.select(info.Name)
+				end
+			end)
+	
+			button.MouseEnter:Connect(function()
+				hovering = true
+	
+				repeat wait() until not vars.selecting
+	
+				if not hovering then
+					return
+				end
+	
+				local tween = tweenService:Create(nameLabelPadding, TweenInfo.new(0.2, Enum.EasingStyle.Quad), {PaddingLeft = UDim.new(0, 16)})
+				table.insert(vars.tweens, tween)
+	
+				vars.tweens["mouseenter"] = tween
+	
+				tween:Play()
+			end)
+	
+			button.MouseLeave:Connect(function()
+				hovering = false
+	
+				repeat wait() until not vars.selecting
+	
+				if hovering then
+					return
+				end
+	
+				local tween = tweenService:Create(nameLabelPadding, TweenInfo.new(0.2, Enum.EasingStyle.Quad), {PaddingLeft = UDim.new(0, 10)})
+				table.insert(vars.tweens, tween)
+	
+				tween:Play()
+			end)
+			
+			if info.Id then
+				local gameicon = marketplaceService:GetProductInfo(info.Id).IconImageAssetId
+				local gameinfo = funcs.getGameInformation(info.Id)
+				
+				info["gameIcon"] = "rbxassetid://" .. gameicon
+				info["playerCount"] = gameinfo.playing
+				info["lastUpdated"] = gameinfo.updated
+			end
+			
+			vars.games[info.Name] = info
+	
+			if not vars.selected then
+				funcs.select(info.Name)
+			end
+		end
+	end
+	
+
+	do -- dragger
+		local UserInputService = game:GetService("UserInputService")
+	
+		local gui = main.Parent
+	
+		local dragging
+		local dragInput
+		local dragStart
+		local startPos
+	
+		local function update(input)
+			local delta = input.Position - dragStart
+			gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		end
+	
+		gui.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+				dragging = true
+				dragStart = input.Position
+				startPos = gui.Position
+	
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragging = false
+					end
+				end)
+			end
+		end)
+	
+		gui.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+	
+		UserInputService.InputChanged:Connect(function(input)
+			if input == dragInput and dragging then
+				update(input)
+			end
+		end)
+	end
+
+	
+	main.Information.TextButton.MouseButton1Click:Connect(function()
+		main.Parent.Parent:Destroy()
+		
+		local success, returned = pcall(vars.selected.Script)
+		
+		print(success, returned)
+	end)
+	
+	local connection = nil
+	
+
+	do -- particles
+		task.spawn(function()
+			while main and main:FindFirstChild("Particles") and wait(0.05) do
+				funcs.createParticle(math.random())
+			end
+		end)
+	end
+
+    funcs.add({
+		Name = "Dusty Trip",
+		Id = 16389395869,
+		Status = "operational",
+		Script = function()
+			loadstring(game:HttpGet("https://gist.githubusercontent.com/Sepper2023/7dff6032a48cc597ae3f658500bf85ae/raw/400f7afd2fdce7ca645a2b525c031254f5f6b144/gistfile1.txt",true))()
+		end
+	})
+
+	funcs.add({
+		Name = "Criminality",
+		Id = 4588604953,
+		Status = "in development",
+		Script = function()
+            
+		end
+	})
+end;
+task.spawn(C_23);
+
+return G2L["1"], require;

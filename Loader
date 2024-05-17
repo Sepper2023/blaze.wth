@@ -632,7 +632,7 @@ local script = G2L["23"];
     funcs.add({
 		Name = "Dusty Trip",
 		Id = 16389395869,
-		Status = "operational",
+		Status = "early access",
 		Script = function()
 			loadstring(game:HttpGet("https://gist.githubusercontent.com/Sepper2023/7dff6032a48cc597ae3f658500bf85ae/raw/400f7afd2fdce7ca645a2b525c031254f5f6b144/gistfile1.txt",true))()
 		end

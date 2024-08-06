@@ -577,12 +577,21 @@ function library:init()
             return
         end
 
+        print("--[Options:]")
+        for i,v in pairs(library.options) do
+            print(i,v)
+        end
+        print("---------------------------")
+        print("--[Config:]")
+        for i,v in pairs(http:JSONDecode(cfg)) do
+            print(i,v)
+        end
+        print("---------------------------")
+
         setByConfig = true
         for flag,value in pairs(http:JSONDecode(cfg)) do
             local option = library.options[flag]
             if option ~= nil then
-                print(flag.." found")
-
                 if option.class == 'toggle' then
                     option:SetState(value == nil and false or (value == 1 and true or false));
                 elseif option.class == 'slider' then
@@ -600,6 +609,8 @@ function library:init()
             end
         end
         setByConfig = false
+
+        print("Loaded successfuly")
     end
 
     function self:SaveConfig(name)

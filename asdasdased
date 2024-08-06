@@ -577,9 +577,11 @@ function library:init()
             return
         end
 
-        for flag,value in pairs(http:JSONDecode(cfg)) do
-            print(flag)
+        for i,v in pairs(http:JSONDecode(cfg)) do
+            print(i)
+        end
 
+        for flag,value in pairs(http:JSONDecode(cfg)) do
             local option = library.options[flag]
             if option ~= nil then
                 if option.class == 'toggle' then

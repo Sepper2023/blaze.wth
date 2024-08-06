@@ -579,9 +579,11 @@ function library:init()
 
         setByConfig = true
         for flag,value in next, http:JSONDecode(cfg) do
+            print(flag.." found in config!")
+
             local option = library.options[flag]
             if option ~= nil then
-                print(flag.." found!")
+                print(flag.." found in script options!")
 
                 if option.class == 'toggle' then
                     option:SetState(value == nil and false or (value == 1 and true or false));

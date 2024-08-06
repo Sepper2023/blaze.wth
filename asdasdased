@@ -4653,11 +4653,6 @@ function library:CreateSettingsTab(menu)
         library:SetOpen(not library.open)
     end});
 
-    mainSection:AddToggle({text = 'Enable Watermark', flag = 'watermark_enabled'});
-    mainSection:AddList({text = 'Watermark Position', flag = 'watermark_pos', selected = 'Custom', values = {'Top', 'Top Left', 'Top Right', 'Bottom Left', 'Bottom Right', 'Custom'}, callback = function(val)
-        library.watermark.lock = val;
-    end})
-
     local themeStrings = {};
     for _,v in next, library.themes do
         table.insert(themeStrings, v.name)

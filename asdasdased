@@ -4489,7 +4489,7 @@ function library:init()
             text = {
                 {"Spinbot.cc", true},
                 {"V"..getgenv().Config.Version, true},
-                {"Testing", true},
+                {"Public", true},
             };
             lock = 'custom';
             position = newUDim2(0,0,0,0);

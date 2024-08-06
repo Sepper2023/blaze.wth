@@ -581,6 +581,8 @@ function library:init()
         for flag,value in next, http:JSONDecode(cfg) do
             local option = library.options[flag]
             if option ~= nil then
+                print(flag.." found!")
+
                 if option.class == 'toggle' then
                     option:SetState(value == nil and false or (value == 1 and true or false));
                 elseif option.class == 'slider' then
@@ -609,8 +611,6 @@ function library:init()
 
         local cfg = {};
         for flag,option in next, self.options do
-            print(option.class)
-
             if option.class == 'toggle' then
                 cfg[flag] = option.state and 1 or 0;
             elseif option.class == 'slider' then

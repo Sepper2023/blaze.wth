@@ -609,6 +609,8 @@ function library:init()
 
         local cfg = {};
         for flag,option in next, self.options do
+            print(option.class)
+
             if option.class == 'toggle' then
                 cfg[flag] = option.state and 1 or 0;
             elseif option.class == 'slider' then
